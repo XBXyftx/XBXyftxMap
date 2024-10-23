@@ -1,0 +1,55 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "storePassword": "0000001AB861D2E6E22438175325EAD9BAA444BF8C8252FA027CDE2B4A255D451057AD997D0DFF10EC2A",
+          "certpath": "D:/ZhengShuXiaZai/xbxZhengShu.cer",
+          "keyAlias": "xbxKey",
+          "keyPassword": "000000194DB4DD5B1A70506A044A4D915B8E10DC10F67680E55068DBD47B2908C1455664717359C1FD",
+          "profile": "D:/ZhengShuXiaZai/xbxyftxMapDebug.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\ASUS\\.ohos\\config\\default_XBXyftxMap_QxVgfeM2v0Y0XFqTkkLIDV7IbQjrHcddMshtH_U2qAs=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
